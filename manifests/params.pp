@@ -1,6 +1,6 @@
-# == Class: hekad::params
+# == Class: heka::params
 # DO NOT CALL DIRECTLY
-class hekad::params {
+class heka::params {
 
     $ensure                               = 'installed'
     $version                              = '0.8.0'
