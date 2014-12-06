@@ -1,0 +1,30 @@
+{
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat"
+    },
+    {
+      "operatingsystem": "CentOS"
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">=2.7.20 <4.0.0"
+    }
+  ],
+  "name": "oliviazhang-hekad",
+  "version": "1.0.0",
+  "source": "git clone https://github.com/oliviazhang0809/puppet-hekad.git",
+    "author": "Olivia Zhang",
+  "license": "",
+  "summary": "",
+  "project_page": "https://github.com/oliviazhang0809/puppet-hekad",
+  "issues_url": "https://github.com/oliviazhang0809/puppet-hekad/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 3.2.0"
+    }
+  ]
+}
