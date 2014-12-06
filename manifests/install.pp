@@ -12,7 +12,7 @@ class heka::install {
   # Create heka service
   file { '/etc/init.d/hekad':
     ensure  => file,
-    content => template('hekad/init.sh'),
+    content => template('heka/init.sh'),
     owner   => 'hekad',
     group   => 'hekad',
     mode    => '0700',
