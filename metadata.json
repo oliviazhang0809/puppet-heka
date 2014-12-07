@@ -13,18 +13,26 @@
       "version_requirement": ">=2.7.20 <4.0.0"
     }
   ],
-  "name": "oliviazhang-hekad",
+  "name": "oliviazhang-heka",
   "version": "1.0.0",
-  "source": "git clone https://github.com/oliviazhang0809/puppet-hekad.git",
+  "source": "git clone https://github.com/oliviazhang0809/puppet-heka.git",
     "author": "Olivia Zhang",
   "license": "",
   "summary": "",
-  "project_page": "https://github.com/oliviazhang0809/puppet-hekad",
-  "issues_url": "https://github.com/oliviazhang0809/puppet-hekad/issues",
+  "project_page": "https://github.com/oliviazhang0809/puppet-heka",
+  "issues_url": "https://github.com/oliviazhang0809/puppet-heka/issues",
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
       "version_requirement": ">= 3.2.0"
+    },
+    {
+      "name": "puppetlabs/inifile",
+      "version_requirement": ">= 1.0.0"
+    },
+    {
+      "name": "nanliu/staging",
+      "version_requirement": ">= 0.4.0"
     }
   ]
 }

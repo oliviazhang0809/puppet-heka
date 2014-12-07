@@ -33,7 +33,7 @@ class heka::install {
   # install the package
   package { 'hekad':
     provider => $package_provider,
-    source   => '/opt/staging/hekad/hekad-package',
+    source   => '/opt/staging/heka/hekad-package',
     require  => Staging::File['hekad-package'],
   }
 
@@ -48,7 +48,7 @@ class heka::install {
   # install the package
   package { 'daemon':
     provider => $package_provider,
-    source   => '/opt/staging/hekad/daemon-package',
+    source   => '/opt/staging/heka/daemon-package',
     require  => Staging::File['daemon-package'],
   }
 }
