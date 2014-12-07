@@ -2,7 +2,7 @@
 
 ####Table of Contents
 
-1. [Overview - What is the hekad module?](#overview)
+1. [Overview - What is the heka module?](#overview)
 2. [Module Description - What does this module do?](#module-description)
 3. [Setup - The basics of getting started with hekad](#setup)
 4. [Usage - The class and available configurations](#usage)
@@ -10,7 +10,7 @@
 
 ##Overview
 
-This module installs and configures for heka.
+This module installs and configures heka and starts heka daemon.
 
 ##Module Description
 
@@ -31,7 +31,7 @@ installed at /opt/hekad.
 
 ##Usage
 
-####Class: `hekad`
+####Class: `heka`
 
 This is the primary class. And the only one which should be used.
 
@@ -44,13 +44,13 @@ Default is '0.8.0'
 
 #####`config_path`
 
-Configuration file `config.toml` location.
+Configuration file `config.toml` location. By default, it is under `/opt/hekad/shared`.
 
 #####`exec_path`
 
-`init.sh` location.
+`init.sh` location. You don't need to call it directly. To turn on and off the service, you should do `service hekad start` or `service hekad stop`.
 
-Rest params are associated with heka - please check [Configuring hekad](https://hekad.readthedocs.org/en/v0.8.0/config/index.html), [Inputs](https://hekad.readthedocs.org/en/v0.8.0/config/inputs/) and [Decoders](https://hekad.readthedocs.org/en/v0.8.0/config/decoders/index.html).
+The rest of params are associated with heka - please check [Configuring hekad](https://hekad.readthedocs.org/en/v0.8.0/config/index.html), [Inputs](https://hekad.readthedocs.org/en/v0.8.0/config/inputs/) and [Decoders](https://hekad.readthedocs.org/en/v0.8.0/config/decoders/index.html) for more information.
 
 ##Limitations
 
@@ -62,4 +62,4 @@ This module is tested on CentOS 6.5 and should also run without problems on
 
 ##Contributing
 
-This module is open projects. So if you want to make this module even better, you can contribute to this module on [Github](https://github.com/oliviazhang0809/puppet-hekad).
+This module is open projects. So if you want to make this module even better, you can contribute to this module on [Github](https://github.com/oliviazhang0809/puppet-heka).
