@@ -1,0 +1,2 @@
+This is a small vagrant program that automatically create a centOS box, set up heka and start heka daemon that connects to influxdb. 
+Before `vagrant up` your box, you want to set the hostname and database name in config.toml file. Notice that heka want create a database itself, so the database should exist before running the program.
