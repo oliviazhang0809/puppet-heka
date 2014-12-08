@@ -11,6 +11,7 @@
 class heka (
   $ensure                               = $heka::params::ensure,
   $version                              = $heka::params::version,
+  $daemon_version                              = $heka::params::daemon_version,
   $pkg_version                          = $heka::params::pkg_version,
   $install_from_repository              = $heka::params::install_from_repository,
   $config_path                          = $heka::params::config_path,

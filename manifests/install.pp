@@ -38,7 +38,7 @@ class heka::install {
   }
 
   # [install daemon]
-  $daemon_package_source = 'http://libslack.org/daemon/download/daemon-0.6.4-1.x86_64.rpm'
+  $daemon_package_source = 'http://libslack.org/daemon/download/daemon-${heka::daemon_version}-1.x86_64.rpm'
 
   # get the package
   staging::file { 'daemon-package':

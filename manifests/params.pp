@@ -5,6 +5,7 @@ class heka::params {
     $ensure                               = 'installed'
     $version                              = '0.8.0'
     $pkg_version                          = '0_8_0'
+    $daemon_version                              = '0.6.4'
     $install_from_repository              = false
     $config_path                          = '/opt/hekad/shared/config.toml'
     $exec_path                            = '/opt/hekad/shared/init.sh'
