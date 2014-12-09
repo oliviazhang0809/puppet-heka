@@ -10,7 +10,7 @@ class heka::config {
 
   # [StatsdInput]
   ini_setting { 'statusd_input_address':
-    section => 'hekad',
+    section => 'StatsdInput',
     setting => 'address',
     value   => "\"${heka::statusd_input_address}\"",
   }
