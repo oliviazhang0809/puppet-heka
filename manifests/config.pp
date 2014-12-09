@@ -8,6 +8,13 @@ class heka::config {
     value   => $heka::maxprocs,
   }
 
+  # [StatsdInput]
+  ini_setting { 'statusd_input_address':
+    section => 'hekad',
+    setting => 'address',
+    value   => "\"${heka::statusd_input_address}\"",
+  }  
+
   # [StatAccumInput]
   ini_setting { 'ticker_interval':
     section => 'StatAccumInput',

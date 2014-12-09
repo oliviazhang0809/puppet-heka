@@ -13,6 +13,9 @@ class heka::params {
     # [hekad]
     $maxprocs                             = 1
 
+    # [StatsdInput]
+    $statusd_input_address    = '0.0.0.0:8125'
+
     # [StatAccumInput]
     $ticker_interval                      = 1
     $emit_in_fields                       = true

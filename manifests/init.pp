@@ -17,6 +17,7 @@ class heka (
   $config_path                          = $heka::params::config_path,
   $exec_path                            = $heka::params::exec_path,
   $maxprocs                             = $heka::params::maxprocs,
+  $statusd_input_address         = $heka::params::statusd_input_address,
   $ticker_interval                      = $heka::params::ticker_interval,
   $emit_in_fields                       = $heka::params::emit_in_fields,
   $influx_encoder_type                  = $heka::params::influx_encoder_type,
