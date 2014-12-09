@@ -2,6 +2,7 @@
 maxprocs = 1
 
 [StatsdInput]
+address = "0.0.0.0:8125"
 
 [StatAccumInput]
 ticker_interval = 1

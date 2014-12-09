@@ -22,9 +22,9 @@ rm daemon-0.6.4-1.x86_64.rpm
 
 # fetch predefined config.toml
 cd /opt/hekad/shared
-wget https://raw.githubusercontent.com/oliviazhang0809/grafana/master/heka/config.toml --no-check-certificate
+wget https://raw.githubusercontent.com/oliviazhang0809/puppet-heka/master/awesome_vagrant_test/config.toml --no-check-certificate
 cd /etc/hekad
-wget https://raw.githubusercontent.com/oliviazhang0809/grafana/master/heka/init.sh --no-check-certificate
+wget https://raw.githubusercontent.com/oliviazhang0809/puppet-heka/master/awesome_vagrant_test/init.sh --no-check-certificate
 
 # change user right
 chown -R hekadUser:hekadUser /etc/hekad
