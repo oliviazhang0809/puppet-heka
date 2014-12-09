@@ -13,7 +13,7 @@ class heka::config {
     section => 'hekad',
     setting => 'address',
     value   => "\"${heka::statusd_input_address}\"",
-  }  
+  }
 
   # [StatAccumInput]
   ini_setting { 'ticker_interval':
